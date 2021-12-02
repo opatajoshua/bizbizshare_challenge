@@ -1,6 +1,6 @@
-# Inpath BIZBIZSHARE
+# BIZBIZSHARE Code challenge
 
-This is my submission to the react.js code challenge by Inpath.
+This is my submission to the react.js code challenge by bizbizshare.
 
 ## Available Scripts
 
