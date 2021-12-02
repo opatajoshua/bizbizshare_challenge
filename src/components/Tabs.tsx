@@ -10,6 +10,7 @@ export function Tab({ label, className, children, ...props }: {label: string} & 
 
 
 interface TabsProps{
+  className?: string
   children: React.ReactNode
 }
 
@@ -18,10 +19,10 @@ function Tabs(props: React.PropsWithChildren<TabsProps>) {
   const children = Array.isArray(props.children)? props.children as any[]: [props.children];
 
   return (
-    <div className="tabs">
+    <div className={`tabs ${props.className}`}>
       <div className="tab-list">
         {children.map((child: any, index: number) => <button  key={index}
-              className={``} 
+              className={`tab-button ${activeTab==index?'is-active': ''}`} 
               onClick={()=>setActiveTab(index)}
             >
             {child.props.label}
