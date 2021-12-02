@@ -11,6 +11,7 @@ function Section2({ names }: { names: string[] }) {
         </li>
         ))}
       </ul>
+      {!names.length &&  <p className="text-center font-bold text-gray-500 py-20">No names added</p>}
     </div>
   );
 }

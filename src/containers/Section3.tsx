@@ -11,6 +11,7 @@ function Section3({ favAnimals }: { favAnimals: string[] }) {
         </li>
         ))}
       </ul>
+      {!favAnimals.length &&  <p className="text-center font-bold text-gray-500 py-20">No favorite animals added</p>}
     </div>
   );
 }

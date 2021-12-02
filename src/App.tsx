@@ -11,7 +11,8 @@ function App() {
 
   return (
     <div id="app" className="fixed h-full w-full overflow-auto">
-      <Tabs className="container max-w-4xl mx-auto lg:px-0 px-6 pb-28 mt-10">
+      <h1 className="pl-10 py-3 text-2xl font-bold text-yellow-700">BIZBIZSHARE</h1>
+      <Tabs className="container max-w-4xl mx-auto lg:px-0 px-6 pb-28 md:mt-10">
         <Tab label="Forms">
           <Section1
             onNewName={(newName)=>setNames([...names, newName])}
