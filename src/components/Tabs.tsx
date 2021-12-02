@@ -22,7 +22,7 @@ function Tabs(props: React.PropsWithChildren<TabsProps>) {
     <div className={`tabs ${props.className}`}>
       <div className="tab-list">
         {children.map((child: any, index: number) => <button  key={index}
-              className={`tab-button ${activeTab==index?'is-active': ''}`} 
+              className={`tab-button ${activeTab===index?'is-active': ''}`} 
               onClick={()=>setActiveTab(index)}
             >
             {child.props.label}

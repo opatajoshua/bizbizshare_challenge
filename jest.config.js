@@ -25,5 +25,9 @@ module.exports = {
     // testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
   
     // Module file extensions for importing
-    moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"]
+    moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+
+    "moduleNameMapper":{
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy" 
+    }
 };
